@@ -11,10 +11,16 @@ if n < 1 or n > 9:
 k = ""
 for j in range(n):
     k = ""
-    spaces = ' ' * (n-1-j)
+    spaces = '  ' * (n - 1 - j)
     for i in range(1, j + 2):
-        k += str(i)
+        if j == 0:
+            k += str(i)
+            continue
+        k += str(i) + " "
     for i in range(j, 0, -1):
-        k += str(i)
+        if i == 1:
+            k += str(i)
+            continue
+        k += str(i) + " "
 
     print(spaces + k)
