@@ -10,7 +10,13 @@
 
 email_adress = str(input("Input please your email: "))
 part1 = email_adress.split("@")
+if len(part1) < 2:
+    print("False")
+    exit()
 part2 = part1[1].split(".")
+if len(part2) < 2:
+    print("False")
+    exit()
 
 if (not (email_adress.startswith('@') and email_adress.endswith('.')) and email_adress.count('@') == 1
         and email_adress.count('.') == 1
