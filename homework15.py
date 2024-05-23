@@ -3,21 +3,23 @@
 # If there are no such elements, print None object for both the sum and the product.
 
 input_lst = []
-sum_v = 0
-prod_v = 1
-for i in range(8):
+sum_v = None
+prod_v = None
+
+for i in range(9):
     input_lst.append(int(input("Enter a number,please: ")))
 
-max_v = int(input('Enter the MAX value: '))
 min_v = int(input('Enter the MIN value: '))
+max_v = int(input('Enter the MAX value: '))
 
 for i in input_lst:
     if min_v <= i <= max_v:
+        if sum_v is None:
+            sum_v = 0
+        if prod_v is None:
+            prod_v = 1
         sum_v += i
         prod_v *= i
-    else:
-        sum_v = None
-        prod_v = None
 
 print('lst = ', input_lst)
 print('MIN = ', min_v)
