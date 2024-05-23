@@ -22,5 +22,5 @@ for i in input_lst:
 print('lst = ', input_lst)
 print('MIN = ', min_v)
 print('MAX = ', max_v)
-print('sum = ', sum_v)
-print('product = ', prod_v)
+print('.............................')
+print('sum = ', sum_v, ', product = ', prod_v)
