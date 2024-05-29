@@ -1,0 +1,9 @@
+Filename: first_file.txt
+Content: There are the text from first_file.
+----------------------------------------
+Filename: second_file.txt
+Content: There is the text from inner_dir second_file
+----------------------------------------
+Filename: third_file.txt
+Content: There is the text from inner_dir third_file.
+----------------------------------------
