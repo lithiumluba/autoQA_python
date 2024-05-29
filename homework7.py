@@ -3,7 +3,7 @@
 # DO NOT use methods of string type.
 
 size = int(input("Enter a size of triangle: "))
-i = 0
-while size > i:
+i = 1
+while size >= i:
+    print((size-i) * " " + i * '*')
     i += 1
-    print((size-i)*" ", i * '*')
