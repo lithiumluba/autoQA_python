@@ -19,13 +19,11 @@ def is_valid_email(email):
         return False
 
 
-
 email = "aaa@bbb.ccc"    # True
 
 # Some more tests:
 # False -> @lithium.gmail;  lithium@gmail.com. ; lithium.gmail@com; li$*@gmail.c*m; lithium@@com.ua
 # True -> lithium@gmail.com; lithium08@gmail1.com ; lithium+123@gmail.com
-
 
 result = is_valid_email(email)
 print(result)
